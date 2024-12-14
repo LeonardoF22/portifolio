@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <header id="inicio">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li>
+                    <input id="toggle" class="toggle" type="checkbox">
+                    <label for="toggle"></label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content-index">
+            <div id="imagem">
+                <img src="img/img.jpg">
+                <div class="icons">
+                    <a href="https://github.com/LeonardoF22" target="_blank">
+                        <i class="fa-brands fa-github fa-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leonardofr22/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-xl"></i>
+                    </a>
+                    <a href="https://wa.me/+5519999713712" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="conteudo">
+                <h3>LEONARDO RODRIGUES</h3>
+                <h2>< Desenvolvedor Web /></h2>
+                <p>Seja bem vindo ao meu portifólio</p>
+            </div>
+        </div>
+
+        <div class="content" id="sobre">
+            <h2>Sobre</h2>
+            <br>
+            <p>Olá, meu nome é Leonardo Rodrigues, tenho 19 anos, moro em Itapira-SP. Me interessei na área de programação em 2021 ao cursar o Ensino Médio Profissionalizante de Informática para Internet na escola Prof. Pedro Ferreira Cintra, concluido em 2023, no ano seguinte ingressei na Fatec Ogari de Castro Pacheco localizada em Itapira para cursar Desenvolvimento de Software Multiplataforma. Além de programar, gosto de assistir animes, ler mangás e jogar no tempo livre.</p>
+            <br>
+            <a href="documents/Curriculo_Leonardo_Rodrigues.pdf" target="_blank" class="btn">Visualizar Currículo</a>
+        </div>
+        
+        <div class="content" id="projetos">
+            <h2>Projetos</h2>
+            <div class="projetos">
+                
+                <div class="projeto">
+                    <div class="projetoConteudo">
+                        <img class="projImg" src="img/teste.png">
+                        <h3>Título</h3>
+                        <p>aaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="projetoConteudo">
+                        <img class="projImg" src="img/teste2.png">
+                        <h3>Título</h3>
+                        <p>aaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="projetoConteudo">
+                        <img class="projImg" src="img/teste.png">
+                        <h3>Título</h3>
+                        <p>aaaaaaaaaaaaaa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>Conhecimentos</h2>
+            <div class="conhecimento">
+                <div class="imagem-container">
+                    <img class="img" src="img/html.png">
+                    <div class="texto-hover">Html</div>
+                </div>
+                <div class="imagem-container">
+                    <img class="img" src="img/css.png">
+                    <div class="texto-hover">CSS</div>
+                </div>
+                <div class="imagem-container">
+                    <img class="img" src="img/php.png">
+                    <div class="texto-hover">php</div>
+                </div>
+                <div class="imagem-container">
+                    <img class="img" src="img/mysql.png">
+                    <div class="texto-hover">MySql</div>
+                </div>
+                <div class="imagem-container">
+                    <img class="img" src="img/figma.png">
+                    <div class="texto-hover">Figma</div>
+                </div>
+                <div class="imagem-container">
+                    <img class="img" src="img/git.png">
+                    <div class="texto-hover">Git</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        
+        <p>©️ 2024 - Leonardo Rodrigues</p>
+    
+    </footer>
+   <script src="script.js"></script>
+   <script src="https://kit.fontawesome.com/0b4bc5ad02.js" crossorigin="anonymous"></script>
+</body>
+</html>
